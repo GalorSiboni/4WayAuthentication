@@ -11,3 +11,5 @@ In this app we made 4 way authentication:
 4.Email-password - You need to enter the right credentials for be able to log in.
 
 Authors: Galor Siboni & Nadav Halevy.
+
+![Screenshot_20210405-004515_HW1](https://user-images.githubusercontent.com/46165586/113522447-29e7c980-95a9-11eb-95ab-095dd166b9bf.jpg)
