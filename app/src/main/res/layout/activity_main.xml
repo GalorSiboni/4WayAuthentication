@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/authentication"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#ff2b00"
+                android:textSize="20sp"
+                android:text="Compass"/>
+
+            <TextView
+                android:id="@+id/sotw_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:text=" "
+                android:textColor="#0a0a02"
+                android:textSize="30dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/main_image_dial"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/compass_dial"
+                    android:src="@drawable/dial" />
+
+                <ImageView
+                    android:id="@+id/main_image_hands"
+                    android:layout_width="5dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/compass_hands"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hands" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/auth2"
+            android:text="Brightness:"
+            android:textStyle="bold"
+            android:textColor="#ff2b00"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/auth3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Vibration Counter: "
+                android:textStyle="bold"
+                android:textColor="#ff2b00"
+                android:textSize="20sp"/>
+            <ImageButton
+                android:id="@+id/vibBTN"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/auth3"
+                android:src="@drawable/btn_vib"
+                android:scaleType="fitXY">
+            </ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_below="@+id/authentication"
+        android:id="@+id/editTextLayout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/blue"
+        android:paddingBottom="20dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <EditText
+            android:id="@+id/editUser"
+            android:visibility="invisible"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#11000000"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginBottom="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:hint="@string/username_hint"
+            android:autofillHints="UserName" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editUser"
+            android:layout_centerHorizontal="true"
+            android:background="#11000000"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:hint="@string/password_txt_main_page"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPassword"
+            android:layout_marginBottom="30dp"
+            android:autofillHints="Password" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_below="@id/editPassword">
+            <Button
+                android:id="@+id/regBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/rec_gradient"
+                android:text="@string/main_activity_reg_lbl"
+                android:textColor="@android:color/white"/>
+            <Button
+                android:id="@+id/logBTN"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rec_gradient"
+                android:text="@string/main_activity_log_in_lbl"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/logInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authentication"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/main_activity_log_in_lbl"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "895449246342",
+    "project_id": "galor-nadav-hw1",
+    "storage_bucket": "galor-nadav-hw1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895449246342:android:84af007ede7ff501423f07",
+        "android_client_info": {
+          "package_name": "com.example.galor_nadav_hw1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "895449246342-87uafkra9e6hvvvcfl13a237pn7mnn73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTgBrcuug-543BY_Fy3_J2Xt8mGIb9l6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "895449246342-87uafkra9e6hvvvcfl13a237pn7mnn73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

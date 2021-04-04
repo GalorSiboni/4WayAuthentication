@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name" translatable="false">HW1</string>
+    <string name="password_txt_main_page">Password</string>
+    <string name="username_hint" translatable="false">Email</string>
+    <string name="main_activity_log_in_lbl">Log in</string>
+    <string name="main_activity_reg_lbl">Register</string>
+    <string name="main_activity_log_in_text">Log In</string>
+    <string name="lbl_submit_register">Submit</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="msg">u log in successfully</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="compass_dial" translatable="false">Compass Dial</string>
+    <string name="compass_hands" translatable="false">Compass Hands</string>
+    <string name="sotw_north" translatable="false">N</string>
+    <string name="sotw_east" translatable="false">E</string>
+    <string name="sotw_south" translatable="false">S</string>
+    <string name="sotw_west" translatable="false">W</string>
+    <string name="sotw_northeast" translatable="false">NE</string>
+    <string name="sotw_northwest" translatable="false">NW</string>
+    <string name="sotw_southeast" translatable="false">SE</string>
+    <string name="sotw_southwest" translatable="false">SW</string>
+</resources>
